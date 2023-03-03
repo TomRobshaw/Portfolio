@@ -6,11 +6,11 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
+import profilephotosq from "../public/profilephotosq.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">developedbytr</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,7 +42,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/101BDGA3PKMWqK6W7TIIy29f0zNGrO6B8/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -65,7 +65,7 @@ export default function Home() {
               <AiFillYoutube />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={profilephotosq} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -133,7 +133,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
