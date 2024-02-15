@@ -4,13 +4,14 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import profilephotosq from "../public/profilephotosq.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/legacy/image";
-import comingsoon from "../public/comingsoon.png";
+import ImageCarousel from "@/public/components/carousel";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -30,13 +31,13 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
                   className="bg-gradient-to-r from-orange-500 text- to-orange-600 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://drive.google.com/file/d/129NbF3L6AU_1EImfozSFmAqETlbdI9u5/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/11vxFI9oY-854bg2c3QWptAl_6VB2G1bX/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -54,9 +55,13 @@ export default function Home() {
               As an extroverted developer, I thrive in collaborative environments and bring a contagious energy to any team.
               Let's build something great together!
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillLinkedin />
-              <AiFillGithub />
+            <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400">
+              <a href="https://www.linkedin.com/in/tom-robshaw" target="_blank" rel="noopener noreferrer">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://github.com/TomRobshaw" target="_blank" rel="noopener noreferrer">
+                <AiFillGithub />
+              </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={profilephotosq} layout="fill" objectFit="cover" />
@@ -76,7 +81,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-orange-300 flex-1">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Languages
@@ -84,7 +89,7 @@ export default function Home() {
               <p className="py-2">
                 Creating a flexible vocabularly, eager to learn more!
               </p>
-              <h4 className="py-4 text-teal-600">Code I've used</h4>
+              <h4 className="py-4 text-slate-900 font-bold">Code I've used:</h4>
               <p className="text-gray-800 py-1">HMTL</p>
               <p className="text-gray-800 py-1">CSS</p>
               <p className="text-gray-800 py-1">Ruby</p>
@@ -93,7 +98,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Next.JS</p>
               <p className="text-gray-800 py-1">C#</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-orange-300 flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Toolkit
@@ -101,7 +106,7 @@ export default function Home() {
               <p className="py-2">
                 From agile work management to design tools, let's get efficient!
               </p>
-              <h4 className="py-4 text-teal-600">Tools I've used</h4>
+              <h4 className="py-4 text-slate-900 font-bold">Tools I've used:</h4>
               <p className="text-gray-800 py-1">JIRA</p>
               <p className="text-gray-800 py-1">Trello</p>
               <p className="text-gray-800 py-1">Figma</p>
@@ -110,14 +115,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">VSCode</p>
               <p className="text-gray-800 py-1">Visual Studio</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-orange-300 flex-1">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Capablilities</h3>
               <p className="py-2">
                 Whether it's working solo or in a team,
                 I'm always keen to give thing's a go.
               </p>
-              <h4 className="py-4 text-teal-600">I've worked on</h4>
+              <h4 className="py-4 text-slate-900 font-bold">I've worked on:</h4>
               <p className="text-gray-800 py-1">FrontEnd</p>
               <p className="text-gray-800 py-1">BackEnd</p>
               <p className="text-gray-800 py-1">Database Schema</p>
@@ -136,60 +141,16 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={comingsoon}
-              />
+            <div className="flex flex-row gap-8">
+              <div className="">
+                <h3 className="text-2xl py-1 dark:text-white">ServoMate</h3>
+                <ImageCarousel content="servoMate"/>
+              </div>
+              <div className="">
+                <h3 className="text-2xl py-1 dark:text-white">Sauced</h3>
+                <ImageCarousel content="sauced"/>
+              </div>
             </div>
-            {/* <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div> */}
           </div>
         </section>
       </main>
