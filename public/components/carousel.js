@@ -7,13 +7,13 @@ export default class ImageCarousel extends Component {
     const { content } = this.props;
     console.log('Content:', content);
     const servoMateImages = [
-      { src: '../ServoMate1.png', alt: 'ServoMate Dashboard 1', legend: 'ServoMate Dashboard' },
-      { src: '../ServoMate2.png', alt: 'ServoMate Car Status 2', legend: 'ServoMate Car Status' },
-      { src: '../ServoMate3.png', alt: 'ServoMate Nearby Garages 3', legend: 'ServoMate Nearby Garages' },
+      { src: '../servomate1.jpg', alt: 'ServoMate Dashboard 1', legend: 'ServoMate Dashboard' },
+      { src: '../servomate2.jpg', alt: 'ServoMate Car Status 2', legend: 'ServoMate Car Status' },
+      { src: '../servomate3.jpg', alt: 'ServoMate Nearby Garages 3', legend: 'ServoMate Nearby Garages' },
     ];
 
     const saucedImages = [
-      { src: '../Sauced.png', alt: 'Sauced App', legend: 'Sauced Log In' },
+      { src: '../sauced.jpg', alt: 'Sauced App', legend: 'Sauced Log In' },
     ];
 
     const imagesToShow = content === 'servoMate' ? servoMateImages : saucedImages;
