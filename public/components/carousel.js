@@ -1,11 +1,11 @@
-import React, { Component, useState} from 'react';
+import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 export default class ImageCarousel extends Component {
 	render() {
     const { content } = this.props;
-    console.log('Content:', content);
+
     const servoMateImages = [
       { src: '../servomate1.jpg', alt: 'ServoMate Dashboard 1', legend: 'ServoMate Dashboard' },
       { src: '../servomate2.jpg', alt: 'ServoMate Car Status 2', legend: 'ServoMate Car Status' },

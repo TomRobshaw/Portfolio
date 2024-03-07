@@ -1,24 +1,42 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('/fonts/Syne/static/Syne-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+
+body::-webkit-scrollbar {
+  width: 0.5px;
 }
-@font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
+
+/* Handle for WebKit browsers */
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Initially transparent */
+}
+
+/* Show scrollbar on hover for WebKit browsers */
+body:hover::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Adjust the color as needed */
 }
