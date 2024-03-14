@@ -2499,11 +2499,6 @@
   "resolved" "https://registry.npmjs.org/nocache/-/nocache-2.0.0.tgz"
   "version" "2.0.0"
 
-"node-bin-setup@^1.0.0":
-  "integrity" "sha512-opgw9iSCAzT2+6wJOETCpeRYAQxSopqQ2z+N6BXwIMsQQ7Zj5M8MaafQY8JMlolRR6R1UXg2WmhKp0p9lSOivg=="
-  "resolved" "https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.1.3.tgz"
-  "version" "1.1.3"
-
 "node-releases@^2.0.8":
   "integrity" "sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.10.tgz"
@@ -2520,13 +2515,6 @@
   "integrity" "sha512-QDf6R8VXF56QVe1boek8an/Rb3rSNaxoFWb7Elpsv2m1+Noua1yy0F1FpKpK5VluF8oymWM4w764A4KsYL4pDg=="
   "resolved" "https://registry.npmjs.org/node-statsd/-/node-statsd-0.1.1.tgz"
   "version" "0.1.1"
-
-"node@^21.6.2":
-  "integrity" "sha512-QdY/IILdqFN4yLJxG4u9njJ37FqBB7QLIkX6YuhOEx77HwgXXzEJOwhxHtEZevAbVt/sy7JIwIZJMgpijyGGxQ=="
-  "resolved" "https://registry.npmjs.org/node/-/node-21.6.2.tgz"
-  "version" "21.6.2"
-  dependencies:
-    "node-bin-setup" "^1.0.0"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="
