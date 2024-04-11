@@ -12,7 +12,7 @@ import BlackStar from "../public/images/BlackStar.svg"
 import WhiteStar from "../public/images/WhiteStar.svg"
 import PlaceHolder from "../public/images/PlaceHolder.png"
 import Sauced from "../public/images/sauced.jpg"
-import UpArrow from "../public/images/UpArrow.svg"
+import UpArrow from "../public/images/Arrow.svg"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -261,7 +261,7 @@ export default function Home() {
                 >
                   GITHUB ↗
                 </button>
-                <button onClick={handleTopClick}>
+                <button onClick={handleTopClick} className="bg-customWhite rounded-full px-6 py-5">
                   <Image src={UpArrow} />
                 </button>
               </div>
