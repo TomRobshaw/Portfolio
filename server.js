@@ -6,7 +6,7 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 // Your app will get the Azure port from the process.enc.PORT
-const port = process.env.PORT || 8080;
+const port = process.env.WEBSITES_PORT || process.env.PORT || 8080;
 
 app
   .prepare()
