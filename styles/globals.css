@@ -40,3 +40,47 @@ body::-webkit-scrollbar-thumb {
 body:hover::-webkit-scrollbar-thumb {
   background-color: transparent; /* Adjust the color as needed */
 }
+
+
+.box {
+  display: inline-block;
+  width: fit-content;
+  margin-left: 4px;
+  color: #fff;
+  font-size: 24px;
+}
+
+/*keyframe animations*/
+.box:first-child {
+  animation: bannermove 150s linear infinite;
+}
+
+@keyframes bannermove {
+ 0% {
+  margin-left: 0px;
+  transform: translateX(0);
+ }
+ 100% {
+    margin-left: -100%;
+ }
+
+}
+.box2 {
+  display: inline-block;
+}
+
+/*keyframe animations*/
+.box2:first-child {
+  animation: bannermove2 60s linear infinite;
+}
+
+@keyframes bannermove2 {
+ 0% {
+  margin-left: 0%;
+  transform: translateX(0);
+ }
+ 100% {
+    margin-left: 100%;
+ }
+
+}
